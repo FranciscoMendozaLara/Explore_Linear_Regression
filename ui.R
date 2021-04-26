@@ -40,8 +40,6 @@ shinyUI(fluidPage(
             
             uiOutput('out')
         ),
-
-        # Show a plot of the generated distribution
         mainPanel(
           fluidRow(
             h2(uiOutput('eq_linear_reg')),
