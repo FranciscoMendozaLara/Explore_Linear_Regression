@@ -9,22 +9,6 @@ shinyServer(function(input, output, session) {
     output$eq_linear_reg <-renderUI({
         withMathJax(helpText("$$ y = \\alpha + \\beta x $$"))
     })
-    
-    # output$out <- renderUI({
-    #     formula <- "$$
-    #   \\begin{split}
-    #   A &= %.0f \\\\
-    #   B &= %.0f \\\\
-    #   Y = MX + B \\\\
-    #   \\alpha + \\beta \\\\
-    #   \\sin^2(\\theta)+\\cos^2(\\theta)=1
-    #   \\end{split}
-    #   $$"
-    #     text <- sprintf(formula, a(), b())
-    #     withMathJax(  
-    #         tags$p(text)
-    #     )
-    # })
 
     stDev <- eventReactive(input$s,{
       if(input$s == "small"){
